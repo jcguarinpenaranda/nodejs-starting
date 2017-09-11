@@ -1,0 +1,25 @@
+machine:
+  environment:
+    CIRCLE_CI: true
+    NODE_ENV: test
+    CIRCLE_CI: true
+  node:
+    version: 6.11.1
+
+dependencies:
+  override:
+    - yarn install --dev
+
+test:
+  post: 
+    - sh sh/automerge.sh
+
+deployment:
+  staging: 
+    branch: master
+    heroku:
+      appname: geopromos-web-staging
+  development:
+    branch: dev
+    heroku:
+      appname: geopromos-web-dev

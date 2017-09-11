@@ -1,0 +1,31 @@
+{
+    "books": [
+        {
+            "id": "123",
+            "name":"Mi libro",
+            "reviews": 5,
+            "avgReviews": 4.7,
+            "authors": [{
+                "name": "Carlos"
+            }]
+        },
+        {
+            "id": "456",
+            "name":"Mi libro 2",
+            "reviews": 10,
+            "avgReviews": 4.7,
+            "authors": [{
+                "name": "Carlos"
+            }]
+        },
+        {
+            "id": "789",
+            "name":"Mi libro 3",
+            "reviews": 7,
+            "avgReviews": 4.7,
+            "authors": [{
+                "name": "Carlos"
+            }]
+        }
+    ]
+}
